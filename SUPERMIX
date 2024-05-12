@@ -1,0 +1,227 @@
+% \documentclass{article}
+% \usepackage[utf8]{inputenc}
+
+% \title{awarrier_cv_04_2022}
+% \author{Anupama Warrier}
+% \date{April 2022}
+
+% \begin{document}
+
+% \maketitle
+
+% \section{Introduction}
+
+% \end{document}
+
+% Anu Warrier
+% CV in LaTeX Template
+
+% This template was originally from https://github.com/NicDuquette/CV-Template and adapted by Anu Warrier. 
+
+
+\documentclass[12pt]{article}
+
+						%%%%%%%%%%%%%%%%%%%%%%%%%%
+						% COMMONLY USED PACKAGES %
+						%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[hidelinks]{hyperref} 	% Hyperlinks around the document, add URLS
+
+\usepackage[letterpaper]{geometry}	% Letter size paper, in case somebody prints the CV
+
+\usepackage{booktabs}				% Enable the tabbing environments
+
+\usepackage{fontawesome5}			% pretty icons for contact information
+
+						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+						%%%%%% FONTS AND FORMATTING %%%%%%
+						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+						
+	% Tufte Book with italic headings (by redefining the SB command)
+\usepackage[oldstyle]{ETbb}					% Edward tufte Book
+
+\usepackage{parskip}						% enable paragraph spacing commands
+
+\usepackage{hanging}						% enable fancy hanging paragraphs
+
+	% Use the calc package to define more tweakable spacing options.
+\usepackage{calc}% http://ctan.org/pkg/calc
+\newlength{\midlength}
+\newlength{\firstlength}
+\newlength{\listindent}
+\newlength{\dategap}
+\newlength{\wrapgap}
+
+\setlength{\wrapgap}{0em}
+\setlength{\dategap}{0.3em}
+\setlength{\listindent}{0.4em}
+\setlength{\firstlength}{1em}%
+\setlength{\midlength}{\textwidth-\firstlength-\listindent}%
+
+	% Define environment for primary section headings
+\newcommand{\heading}[1]{
+	{\setlength{\parskip}{0.8cm plus6mm minus3mm}
+	\parindent=0pt
+	\large \textit{{#1}}}
+%\large \textbf{{#1}}}
+	\vspace{0.1em}
+}
+\setlength{\parindent}{0cm}
+
+	% Define environment for section subheadings
+\newcommand{\subheading}[1]{
+	{\setlength{\parskip}{0.5cm plus4mm minus3mm}
+	\parindent=0pt
+	\large \textit{#1}}
+}
+\setlength{\parindent}{0cm}
+
+	% Define environment for lists of papers / publications / writings
+\newenvironment{paperlist}{
+	\begin{hangparas}{1em}{1}
+	\raggedright \setlength{\parindent}{.3em} \setlength{\parskip}{6pt}
+}{
+	\end{hangparas}
+}
+
+	% Define environment for lists of things with dates 
+	% aligned to the right margin
+\newenvironment{datetabbing}{
+	\begin{tabbing}
+	\parskip=1em
+	\hspace*{\listindent}\=\hspace*{\firstlength}\=\hspace*{\midlength}\= \kill
+}{
+	\end{tabbing}
+}
+
+
+	% Define a nice-looking multiplication operator
+	% to indicate doing things multiple times.
+\newcommand{\X}{$\times$}		% Times I've done something
+
+
+	% DEFINE ALTERNATIVE TABLE COLUMN STYLES
+	% Requires {array} package 
+\usepackage{array}
+	% http://tex.stackexchange.com/questions/12703/how-to-create-fixed-width-table-columns-with-text-raggedright-centered-raggedlef
+	%		Left-justified ragged-right
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+	%		Centered fixed-width
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+	%		Right-justified ragged-left
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+	%		Hanging-indent
+\newcolumntype{H}[1]{>{\hangindent1em\hangafter1\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+
+							%%%%%%%%%%%%%%%%%%
+							%%%%%%%%%%%%%%%%%%
+							% START DOCUMENT %
+							%%%%%%%%%%%%%%%%%%
+							%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+	% Important Note:
+	% Throughout this document, I use the "datetabbing" environment I defined
+	% above to align text. Take a look at this explanation:
+	% https://kb.mit.edu/confluence/display/istcontrib/How+to+use+Tabs+in+LaTeX
+	% Essentially, \> is a tab character, and \' is a predefined right-aligned tab stop.
+
+				% ------------------------------------------------------ %
+				% ----------------  CONTACT INFORMATION ---------------- %
+				% ------------------------------------------------------ %
+
+\noindent
+%{\Large \textit{Anupama A. Warrier}}
+\textbf{{\Large HAITONG CAO}}
+\begin{datetabbing}
+	Lee Shau Kee School of Business and Administration		\>\>\>	  +86 13392951972 \faPhone						\'	\\
+	Hong Kong Metropolitan University		\>\>\>cht0810at@gmail.com \faIcon{envelope}\'	\\
+	WeChat [LovelyMiowa222]		\>\>\>	 github.com/MiowaCao \faGlobe\'	\\
+        WeChat Public Account [bunnymarketer]
+\end{datetabbing}
+% Education Section
+\section*{EDUCATION}
+
+\noindent
+\newline
+\textbf{Hong Kong Metropolitan University} \\
+Year of completion: 2025(expected) \\ 
+Master of Professional Management in Global Business and Marketing \\ 
+Main course: Applied Business Project; Digital Economy and Innovation; International Management Strategy; Innovative Marketing in a Dynamic World; Contemporary Issues in Marketing. \\
+
+\noindent
+\textbf{Beijing University of Financial Technology} \\
+Year of completion: 2023 \\ 
+Bachelor of Visual Communication Design \\ 
+Main course: Fashion Brand Media Design(95); Lifestyle Research and Design(95); Creative Brand Design and Management(95); The Basics of E-commerce(88) \\
+
+\noindent
+
+%------------------------
+
+\section*{RESEARCH INTEREST}
+Global Marketing, Fashion Marketing, Consumer Research, Brand Communication.\\
+\section*{PUBLICATIONS}
+\noindent\\
+Cao, Haitong. "Generation Z’s Surprise Narrative and Value Monetization: The Operation Logic and Risk of Blind Box Marketing" 2024 4th International Conference on Financial Economics and Investment Management(FEIM), 189-198, Print.\\
+
+
+% Employment Section
+\section*{RESEARCH EXPERIENCE}
+\noindent
+\newline
+\noindent
+\textbf{Contemporary Jewellery: improving well-being and quality of life} \\
+Year: 2024 \\
+Seminar\\ 
+The core issues of this seminar include but are not limited to what circumstances, how the wearing of jewelry can improve people's mood and health, how to use the power of jewelry to express personal identity and create happiness properly, and how to enhance the value and improve our quality of life through the redesign and innovation of jewelry.\\
+
+\noindent
+\textbf{Deconstruction of Lipstick Names: Research on Marketing Linguistics from the Perspective of Contemporary Chinese Female Consumers} \\
+Year: 2024 \\
+Research\\ 
+Based on the analysis of lipstick naming strategies of major cosmetics brands, including language style, color vocabulary, graphic symbols, and other elements, this study further explores the direct impact of lipstick names on consumers, as well as the emotional responses and psychological expectations it may trigger, and ultimately affect consumers' purchase choices through field survey, questionnaire survey, interview, and other data. The research hopes to provide precise and targeted marketing strategies for the cosmetics industry. \\
+
+\noindent
+\textbf{2024 Chinese overseas study agency market research} \\
+Year:2024 \\
+Research\\
+Based on preliminary data analysis and the characteristics of the overseas study market, this in-depth study on China's overseas study agency market constructs detailed research hypotheses and verifies them. This study will help companies better understand market dynamics, customer needs, and service effectiveness, and guide intermediaries to optimize services and expand the market. \\
+
+\noindent
+\textbf{The Construction and Communication of Fashion Brand} \\
+Year: 2023 \\
+Program\\ 
+Knew the brand and marketing strategy planning of fashion and luxury; Understood how to inspire purchase desire and establish trust through marketing, communication, and sales channels to achieve the vision and strategic goals of luxury brands; Explored marketing studies in brand construction and acquired practical skills such as field investigation, interview investigation, and questionnaire survey, etc. \\
+
+% Work experience Section 
+\section*{WORK EXPERIENCE}
+
+\noindent
+\newline
+\textbf{Administrative Assistant}, Full-Time, TRANPO Co., LTD\\
+Year:2024\\
+Translated contracts and project materials in English; Drafted official documents and engaged in cross-industry learning in manufacturing \\
+
+\noindent
+\textbf{Operations and Marketing Specialist}, Part-Time, Shanxi Chengzhen Financial Consulting Co., LTD.\\
+Reviewed company reports and financial statements and provided feedback to the finance department assisted in drafting and implementing business plans through interdepartmental cooperation to the consulting project for LILANZ Menswear, provided observations and suggestions on brand assets, and assisted with the business plan for youth market development conducted market research, identified market positioning, analyzed and evaluated competitors, and made brand marketing and promotion with my innovative thinking and teamwork skills. \\
+
+%------------------------
+
+% Professional Skills Section 
+\section*{PROFESSIONAL SKILLS}
+
+\noindent
+\newline
+Data analysis software and programming languages(\textbf{SPSS, R, Python}),\\
+Proficient in \textbf{Office} and \textbf{Adobe},\\
+Chinese(Native),\\
+English(Fluent):\\
+IELTS listening-7/speaking-7/reading-6.5/writing-6; \\
+Tandem certificate-C1.\\
+
+% End document
+\end{document}
